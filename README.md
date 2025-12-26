@@ -1,38 +1,60 @@
-Salesforce AI Chef 🍳🤖
+# Salesforce AI Chef 🍳🤖
 
-AI-Powered Recipe Generator using Salesforce Prompt Builder & Lightning Web Components
+Salesforce AI Chef is an AI-powered recipe generation application built on the Salesforce platform. It leverages Salesforce Prompt Builder and Einstein AI to generate personalized recipes based on user-provided ingredients, dietary preferences, and meal requirements through a modern Lightning Web Components (LWC) interface.
 
-Overview
+---
 
-Salesforce AI Chef is an AI-powered application built on Salesforce that generates personalized recipes based on user inputs such as ingredients, dietary preferences, meal type, and servings. The app leverages Salesforce Prompt Builder, Einstein AI, and Lightning Web Components (LWC) to deliver real-time, structured recipe recommendations directly within Salesforce.
+## Table of Contents
 
-This project demonstrates hands-on experience with Salesforce DX, AI integrations, and modern Salesforce UI development.
+1. [Features](#features)
+2. [Tech Stack](#tech-stack)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Architecture](#architecture)
+6. [Contact](#contact)
 
-Key Features
+---
 
-AI-powered recipe generation using Salesforce Prompt Builder (Flex Templates)
+## Features
 
-Dynamic UI built with Lightning Web Components
+- AI-powered recipe generation using Salesforce Prompt Builder and Einstein AI  
+- Dynamic Lightning Web Components (LWC) UI with real-time responses  
+- Personalized recipes based on ingredients, dietary restrictions, and servings  
+- Structured recipe output including prep time, cook time, and difficulty  
+- Production-ready error handling and input validation  
+- Deployed on Salesforce Lightning App and Experience Cloud  
 
-Secure Apex-based integration with Einstein Prompt APIs
+---
 
-Structured JSON responses rendered as interactive recipe cards
+## Tech Stack
 
-Real-time stats including prep time, cook time, difficulty, and servings
+- **Frontend:** Lightning Web Components (LWC), SLDS  
+- **Backend:** Apex, ConnectApi (Einstein Prompt APIs)  
+- **AI:** Salesforce Prompt Builder, Einstein AI  
+- **Dev Tools:** Salesforce DX (SFDX), VS Code  
+- **Cloud Services:** AWS S3 (for document ingestion)  
 
-Error handling, spinners, and validation for production-grade UX
+---
 
-Tech Stack
+## Installation
 
-Frontend: Lightning Web Components (LWC), SLDS
+### Prerequisites
 
-Backend: Apex, Salesforce Connect API
+Ensure the following are installed and enabled:
 
-AI & Data: Salesforce Prompt Builder, Einstein AI
+- Salesforce CLI (SFDX)
+- Salesforce Developer Org with Einstein AI & Prompt Builder enabled
+- VS Code with Salesforce Extensions
 
-DevOps: Salesforce DX (SFDX), VS Code
+### Setup
 
-Deployment: Scratch Org / Developer Org
+```bash
+git clone https://github.com/your-username/salesforce-ai-chef.git
+cd salesforce-ai-chef
+sfdx auth:web:login -d -a AI_Chef_Org
+sfdx force:source:push
+sfdx force:org:open
+
 
 ## Read All About It
 
