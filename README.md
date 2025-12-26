@@ -1,64 +1,137 @@
-# Salesforce AI Chef
+# Salesforce AI Chef 🍳🤖
 
-Salesforce AI Chef is an AI-powered recipe generation application built on the Salesforce platform. It leverages Salesforce Prompt Builder and Einstein AI to generate personalized recipes based on user-provided ingredients, dietary preferences, and meal requirements through a modern Lightning Web Components (LWC) interface.
+An AI-powered recipe generator built on Salesforce using Prompt Builder, Lightning Web Components (LWC), Apex, and Salesforce DX.  
+This project demonstrates how to integrate Salesforce AI (Einstein / Prompt Builder) with custom UI and backend logic to generate dynamic, structured recipe recommendations.
 
 ---
 
 ## Table of Contents
 
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Architecture](#architecture)
-6. [Contact](#contact)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup & Installation](#setup--installation)
+- [Salesforce DX Configuration](#salesforce-dx-configuration)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Development Model](#development-model)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
 
 ---
 
 ## Features
 
-- AI-powered recipe generation using Salesforce Prompt Builder and Einstein AI  
-- Dynamic Lightning Web Components (LWC) UI with real-time responses  
-- Personalized recipes based on ingredients, dietary restrictions, and servings  
-- Structured recipe output including prep time, cook time, and difficulty  
-- Production-ready error handling and input validation  
-- Deployed on Salesforce Lightning App and Experience Cloud  
+- AI-powered recipe generation using Salesforce Prompt Builder
+- Dynamic ingredient-based recipe suggestions
+- Lightning Web Components UI with responsive layout
+- Apex controller integration with Einstein Prompt Templates
+- Real-time recipe cards with prep time, cook time, difficulty, and servings
+- Chef tips, ingredients, and step-by-step instructions
+- Salesforce DX–based development workflow
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** Lightning Web Components (LWC), SLDS  
-- **Backend:** Apex, ConnectApi (Einstein Prompt APIs)  
-- **AI:** Salesforce Prompt Builder, Einstein AI  
-- **Dev Tools:** Salesforce DX (SFDX), VS Code  
-- **Cloud Services:** AWS S3 (for document ingestion)  
+- Salesforce DX (SFDX)
+- Lightning Web Components (LWC)
+- Apex
+- Salesforce Prompt Builder (Einstein)
+- Salesforce Health / Data Cloud compatible
+- Git & GitHub
 
 ---
 
-## Installation
+## Setup & Installation
 
 ### Prerequisites
-
-Ensure the following are installed and enabled:
-
 - Salesforce CLI (SFDX)
-- Salesforce Developer Org with Einstein AI & Prompt Builder enabled
-- VS Code with Salesforce Extensions
+- Salesforce Developer Org with AI features enabled (Prompt Builder)
+- Git
+- Node.js (recommended)
 
-### Setup
+### Clone the Repository
+git clone https://github.com/<your-username>/<your-repo-name>.git  
+cd <your-repo-name>
 
-```bash
-git clone https://github.com/your-username/salesforce-ai-chef.git
-cd salesforce-ai-chef
-sfdx auth:web:login -d -a AI_Chef_Org
-sfdx force:source:push
-sfdx force:org:open
+### Authenticate Salesforce Org
+sfdx auth:web:login -a DevOrg
 
+---
 
-## Read All About It
+## Salesforce DX Configuration
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+The `sfdx-project.json` file defines project configuration such as:
+- Package directories
+- Namespace (if any)
+- Source format
+- API version
+
+This project follows **source-driven development** using Salesforce DX best practices.
+
+---
+
+## Deployment
+
+### Deploy All Source
+sfdx force:source:deploy -p force-app/main/default
+
+### Deploy Using manifest/package.xml
+sfdx force:mdapi:deploy -d manifest
+
+### Validate Deployment (Check Only)
+sfdx force:source:deploy -p force-app/main/default --checkonly
+
+---
+
+## Usage
+
+1. Open Salesforce App Launcher
+2. Launch **Salesforce AI Chef** app
+3. Navigate to the custom Lightning App Page
+4. Enter:
+   - Ingredients (comma-separated)
+   - Dietary restrictions
+   - Meal type
+   - Number of servings
+5. Click **Generate Recipe**
+6. View AI-generated recipe cards with:
+   - Prep & cook time
+   - Difficulty
+   - Ingredients list
+   - Instructions
+   - Chef tips
+
+---
+
+## Development Model
+
+This project uses a **Salesforce DX modular development model**:
+- Source-controlled metadata
+- Scratch/Developer org compatible
+- Reusable LWC components
+- Apex controllers for AI execution
+- Prompt Builder templates for AI logic
+
+---
+
+## Contributing
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit changes with clear messages
+4. Push to your fork
+5. Open a Pull Request
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Author
+
+Built as a hands-on Salesforce AI + LWC project for learning, portfolio, and real-world AI integration use cases.
