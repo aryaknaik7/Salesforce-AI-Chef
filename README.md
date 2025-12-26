@@ -1,4 +1,4 @@
-# Salesforce AI Chef 🍳🤖
+# Salesforce AI Chef
 
 Salesforce AI Chef is an AI-powered recipe generation application built on the Salesforce platform. It leverages Salesforce Prompt Builder and Einstein AI to generate personalized recipes based on user-provided ingredients, dietary preferences, and meal requirements through a modern Lightning Web Components (LWC) interface.
 
