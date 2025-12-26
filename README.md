@@ -15,7 +15,6 @@ This project demonstrates how to integrate Salesforce AI (Einstein / Prompt Buil
 - [Usage](#usage)
 - [Development Model](#development-model)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author](#author)
 
 ---
@@ -123,12 +122,6 @@ This project uses a **Salesforce DX modular development model**:
 3. Commit changes with clear messages
 4. Push to your fork
 5. Open a Pull Request
-
----
-
-## License
-
-MIT License
 
 ---
 
