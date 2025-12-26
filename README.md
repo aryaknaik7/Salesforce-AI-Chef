@@ -134,4 +134,5 @@ MIT License
 
 ## Author
 
-Built as a hands-on Salesforce AI + LWC project for learning, portfolio, and real-world AI integration use cases.
+Built by Aryak Naik — Salesforce Administrator / Developer  
+Focused on AI-driven Salesforce solutions using Prompt Builder, Apex, and Lightning Web Components.
