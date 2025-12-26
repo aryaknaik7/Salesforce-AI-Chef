@@ -1,14 +1,38 @@
-# Salesforce DX Project: Next Steps
+Salesforce AI Chef 🍳🤖
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+AI-Powered Recipe Generator using Salesforce Prompt Builder & Lightning Web Components
 
-## How Do You Plan to Deploy Your Changes?
+Overview
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Salesforce AI Chef is an AI-powered application built on Salesforce that generates personalized recipes based on user inputs such as ingredients, dietary preferences, meal type, and servings. The app leverages Salesforce Prompt Builder, Einstein AI, and Lightning Web Components (LWC) to deliver real-time, structured recipe recommendations directly within Salesforce.
 
-## Configure Your Salesforce DX Project
+This project demonstrates hands-on experience with Salesforce DX, AI integrations, and modern Salesforce UI development.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Key Features
+
+AI-powered recipe generation using Salesforce Prompt Builder (Flex Templates)
+
+Dynamic UI built with Lightning Web Components
+
+Secure Apex-based integration with Einstein Prompt APIs
+
+Structured JSON responses rendered as interactive recipe cards
+
+Real-time stats including prep time, cook time, difficulty, and servings
+
+Error handling, spinners, and validation for production-grade UX
+
+Tech Stack
+
+Frontend: Lightning Web Components (LWC), SLDS
+
+Backend: Apex, Salesforce Connect API
+
+AI & Data: Salesforce Prompt Builder, Einstein AI
+
+DevOps: Salesforce DX (SFDX), VS Code
+
+Deployment: Scratch Org / Developer Org
 
 ## Read All About It
 
