@@ -1,4 +1,4 @@
-# Salesforce AI Chef 🍳🤖
+# Salesforce AI Chef
 
 An AI-powered recipe generator built on Salesforce using Prompt Builder, Lightning Web Components (LWC), Apex, and Salesforce DX.  
 This project demonstrates how to integrate Salesforce AI (Einstein / Prompt Builder) with custom UI and backend logic to generate dynamic, structured recipe recommendations.
